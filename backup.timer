@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs backup every day
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1d
+Unit=backup.service
+
+[Install]
+WantedBy=multi-user.target
