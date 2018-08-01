@@ -81,3 +81,6 @@ if [ -n "$databases" ]; then
                 sleep 2s
         done
 fi
+
+# 30 days retention
+restic -r forget --keep-daily 30
