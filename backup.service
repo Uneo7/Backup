@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup script
+
+[Service]
+WorkingDirectory=/home/
+Type=forking
+ExecStart=/home/backup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
